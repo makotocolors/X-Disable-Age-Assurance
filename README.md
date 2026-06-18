@@ -86,15 +86,15 @@ If the automatic installation doesn't trigger:
 // @downloadURL            https://raw.githubusercontent.com/makotocolors/X-Disable-Age-Assurance/main/script.user.js
 // ==/UserScript==
 
-(() => {
-  const timer = setInterval(() => {
-    const overrides = unsafeWindow.__INITIAL_STATE__?.featureSwitch?.customOverrides;
-    if (overrides) {
-      overrides.rweb_age_assurance_flow_enabled = false;
-      clearInterval(timer);
-    };
-  }, 10);
-})();
+const patcher = () => {
+    const override = unsafeWindow.__INITIAL_STATE__?.featureSwitch?.customOverrides;
+    if (override) {
+        override.rweb_age_assurance_flow_enabled = false;
+        return true;
+    }
+};
+
+patcher() || new MutationObserver(() => patcher() && observer.disconnect()).observe(document.documentElement, { childList: true, subtree: true });
 ```
 
 *4. Save the script (`Ctrl + S` or `Cmd + S`).*
