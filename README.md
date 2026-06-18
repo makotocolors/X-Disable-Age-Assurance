@@ -28,12 +28,12 @@ By choosing to install and use this script, you explicitly acknowledge and agree
 
 ---
 
-## 💡 Inspiration & Alternative
+## 💡 Inspiration & Alternatives
 
 This project was heavily inspired by the [InsensitiveX](https://orca.pet/insensitivex/) extension, which is a fantastic tool for bypassing this block. 
 
 * **For general users:** We highly recommend using the **[InsensitiveX Extension](https://orca.pet/insensitivex/)** for a simple, plug-and-play installation directly in your browser.
-* **For advanced users:** This userscript is provided as an alternative method for those who already use a userscript manager (like Violentmonkey or Tampermonkey) and prefer to keep their custom scripts centralized in one place.
+* **For advanced users:** This userscript is provided as a lightweight alternative for those who already use a userscript manager and prefer to keep their custom scripts centralized.
 
 ---
 
@@ -47,34 +47,27 @@ This project was heavily inspired by the [InsensitiveX](https://orca.pet/insensi
 
 ## 💾 Installation
 
-### 1. Install a Userscript Manager
-
+### 1. Get a Userscript Manager
 First, install a Userscript manager extension for your browser:
-**[Violentmonkey](https://violentmonkey.github.io/)** or **[Tampermonkey](https://www.tampermonkey.net/)**.
-
-After installation, refresh your browser if necessary.
+* **[Violentmonkey](https://violentmonkey.github.io/)** (Recommended)
+* **[Tampermonkey](https://www.tampermonkey.net/)**
 
 ### 2. Install the Script
+Choose your preferred installation method below:
 
-Choose one of the following methods:
+#### 🟢 Option A: One-Click Installation *(Recommended)*
+The easiest way. Click the link below and your manager will automatically prompt you to install:
 
-#### Option A — One-Click Installation *(Recommended)*
+> **👉 [Install X Disable Age Assurance](https://raw.githubusercontent.com/makotocolors/X-Disable-Age-Assurance/main/script.user.js)**
 
-Open the link below and your Userscript manager should automatically detect and offer installation:
+*Review the permissions and confirm the installation.*
 
-[`Install X Disable Age Assurance`](https://raw.githubusercontent.com/makotocolors/X-Disable-Age-Assurance/main/script.user.js)
-
-Review the permissions and confirm the installation.
-
-#### Option B — Manual Installation
-
-If automatic installation does not work:
+#### 🟡 Option B: Manual Installation
+If the automatic installation doesn't trigger:
 
 1. Open your Userscript manager dashboard.
-2. Click **Create a new script** (usually the `+` button).
-3. Copy the contents from [`script.user.js`](https://github.com/makotocolors/X-Disable-Age-Assurance/blob/main/script.user.js) or paste the code below.
-4. Replace the default template.
-5. Save the script (`Ctrl + S` or `Cmd + S`).
+2. Click **Create a new script** (usually a `+` button).
+3. Replace the default template with the code below:
 
 ```javascript
 // ==UserScript==
@@ -104,30 +97,31 @@ If automatic installation does not work:
 })();
 ```
 
-### 3. Done
+*4. Save the script (`Ctrl + S` or `Cmd + S`).*
 
-Refresh X (Twitter) and the script should start working automatically.
+### 3. Done! 🎉
+
+Simply refresh X (Twitter) and the script will automatically run in the background.
 
 ---
 
 ## 🛠️ How it Works
 
-The script executes at `document-start` and sets up a rapid timer to check for the `__INITIAL_STATE__` object on the global window. Once the object is found, it targets the `featureSwitch.customOverrides` and forces the `rweb_age_assurance_flow_enabled` flag to `false`, bypassing the prompt entirely before the UI renders it.
+The script executes at `document-start` and sets up a rapid timer to check for the `__INITIAL_STATE__` object on the global window. Once the object is found, it targets `featureSwitch.customOverrides` and forces the `rweb_age_assurance_flow_enabled` flag to `false`, bypassing the prompt entirely before the UI renders it.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are always welcome! 
+Contributions, issues, and feature requests are always welcome!
 
-If you find a bug or have a suggestion, feel free to open an issue on the [issues page](https://github.com/makotocolors/X-Disable-Age-Assurance/issues).
+If you find a bug or have a suggestion, feel free to open an issue on the [Issues Page](https://github.com/makotocolors/X-Disable-Age-Assurance/issues).
 
 ---
 
 ## 📝 License
 
 This project is open-source and licensed under the **GPL-3.0 License** - see the [LICENSE](https://github.com/makotocolors/X-Disable-Age-Assurance/blob/main/LICENSE) file for details.
-
 
 ---
 
