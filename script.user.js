@@ -19,7 +19,7 @@ const patcher = () => {
     if (override) {
         override.rweb_age_assurance_flow_enabled = false;
         return true;
-    }
+    };
 };
 
 patcher() || new MutationObserver(() => patcher() && observer.disconnect()).observe(document.documentElement, { childList: true, subtree: true });
