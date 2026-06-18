@@ -1,6 +1,6 @@
 <div align="center">
 
-![Age Assurance Prompt Example](https://i.imgur.com/Pv7KqPb.png)
+![Age Assurance Prompt Example](./age-restricted-content-screen.png)
 
 # X Disable Age Assurance
 
