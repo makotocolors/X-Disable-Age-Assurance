@@ -39,9 +39,9 @@ This project was heavily inspired by the [InsensitiveX](https://orca.pet/insensi
 
 ## ✨ Features
 
-* 🚀 **Zero Configuration:** Works seamlessly right out of the box.
-* 🪶 **Extremely Lightweight:** Minimal code footprint ensures no performance impact on page loading speeds.
-* 🌐 **Broad Compatibility:** Fully supports both `x.com` and `twitter.com` domains.
+* **Zero Configuration:** Works seamlessly right out of the box.
+* **Extremely Lightweight:** Minimal code footprint ensures no performance impact on page loading speeds.
+* **Broad Compatibility:** Fully supports both `x.com` and `twitter.com` domains.
 
 ---
 
