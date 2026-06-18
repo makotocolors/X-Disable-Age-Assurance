@@ -10,6 +10,8 @@
 // @match        https://twitter.com/*
 // @run-at       document-start
 // @grant        unsafeWindow
+// @updateURL    https://raw.githubusercontent.com/makotocolors/X-Disable-Age-Assurance/main/script.user.js
+// @downloadURL  https://raw.githubusercontent.com/makotocolors/X-Disable-Age-Assurance/main/script.user.js
 // ==/UserScript==
 
 (() => {
