@@ -4,7 +4,7 @@
 // @version      1.0.0
 // @description  Userscript that disables the age assurance flow on X (Twitter).
 // @author       Makoto
-// @homepage     https://github.com/makotocolors/X-Disable-Age-Assurance
+// @homepageURL     https://github.com/makotocolors/X-Disable-Age-Assurance
 // @supportURL   https://github.com/makotocolors/X-Disable-Age-Assurance/issues
 // @match        https://x.com/*
 // @match        https://twitter.com/*
