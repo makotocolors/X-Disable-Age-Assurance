@@ -46,8 +46,35 @@ This project was heavily inspired by the [InsensitiveX](https://orca.pet/insensi
 ---
 
 ## 💾 Installation
-### 1. Get the Script Code
-You can either copy the code directly from the [`script.js`](https://github.com/makotocolors/X-Disable-Age-Assurance/blob/main/script.js) file in this repository, or copy the block below:
+
+### 1. Install a Userscript Manager
+
+First, install a Userscript manager extension for your browser:
+**[Violentmonkey](https://violentmonkey.github.io/)** or **[Tampermonkey](https://www.tampermonkey.net/)**.
+
+After installation, refresh your browser if necessary.
+
+### 2. Install the Script
+
+Choose one of the following methods:
+
+#### Option A — One-Click Installation *(Recommended)*
+
+Open the link below and your Userscript manager should automatically detect and offer installation:
+
+[`Install X Disable Age Assurance`](https://raw.githubusercontent.com/makotocolors/X-Disable-Age-Assurance/main/script.user.js)
+
+Review the permissions and confirm the installation.
+
+#### Option B — Manual Installation
+
+If automatic installation does not work:
+
+1. Open your Userscript manager dashboard.
+2. Click **Create a new script** (usually the `+` button).
+3. Copy the contents from [`script.user.js`](https://github.com/makotocolors/X-Disable-Age-Assurance/blob/main/script.user.js) or paste the code below.
+4. Replace the default template.
+5. Save the script (`Ctrl + S` or `Cmd + S`).
 
 ```javascript
 // ==UserScript==
@@ -62,6 +89,8 @@ You can either copy the code directly from the [`script.js`](https://github.com/
 // @match        https://twitter.com/*
 // @run-at       document-start
 // @grant        unsafeWindow
+// @updateURL    https://raw.githubusercontent.com/makotocolors/X-Disable-Age-Assurance/main/script.user.js
+// @downloadURL  https://raw.githubusercontent.com/makotocolors/X-Disable-Age-Assurance/main/script.user.js
 // ==/UserScript==
 
 (() => {
@@ -75,14 +104,9 @@ You can either copy the code directly from the [`script.js`](https://github.com/
 })();
 ```
 
-### 2. Add to your Browser
-1. Install a Userscript manager extension for your web browser:
-   * [Violentmonkey](https://violentmonkey.github.io/) *(Recommended - Open Source)*
-   * [Tampermonkey](https://www.tampermonkey.net/)
-2. Open your Userscript manager's dashboard and click on **Create a new script** (usually a `+` icon).
-3. Paste the copied code into the editor, **completely replacing** any default template code.
-4. **Save** the script (`Ctrl + S` or `Cmd + S`).
-5. Refresh X (Twitter) and you are good to go!
+### 3. Done
+
+Refresh X (Twitter) and the script should start working automatically.
 
 ---
 
