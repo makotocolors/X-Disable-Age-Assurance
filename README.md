@@ -115,7 +115,7 @@ Simply refresh X (Twitter) and the script will automatically run in the backgrou
 
 ## 🛠️ How it Works
 
-The script executes at `document-start` and sets up a rapid timer to check for the `__INITIAL_STATE__` object on the global window. Once the object is found, it targets `featureSwitch.customOverrides` and forces the `rweb_age_assurance_flow_enabled` flag to `false`, bypassing the prompt entirely before the UI renders it.
+The script executes at document-start and immediately attempts to patch the `__INITIAL_STATE__` object on the global window. If the object is not yet available, it attaches a `MutationObserver` to monitor DOM changes and intercept the state initialization as soon as it appears. Once detected, it targets `featureSwitch.customOverrides` and forces the `rweb_age_assurance_flow_enabled` flag to `false`, preventing the age assurance flow before the UI can render it. The observer automatically disconnects after success or after a short timeout to avoid unnecessary overhead.
 
 ---
 
