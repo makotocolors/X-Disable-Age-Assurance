@@ -73,7 +73,7 @@ If the automatic installation doesn't trigger:
 // ==UserScript==
 // @name                   X Disable Age Assurance
 // @namespace              https://github.com/makotocolors
-// @version                1.4.0
+// @version                1.4.1
 // @description            Userscript that disables the age assurance flow on X (Twitter).
 // @author                 Makoto
 // @homepageURL            https://github.com/makotocolors/X-Disable-Age-Assurance
@@ -100,7 +100,7 @@ If the automatic installation doesn't trigger:
   if (!patch()) {
     const observer = new MutationObserver(() => patch() && observer.disconnect());
     observer.observe(document.documentElement, { childList: true, subtree: true });
-    setTimeout(() => observer.disconnect(), 3000);
+    setTimeout(() => observer.disconnect(), 5000);
   };
 };
 ```
