@@ -18,7 +18,7 @@ A lightweight Userscript that automatically disables the age assurance flow on X
 
 > **Use strictly at your own risk. This script is provided "as is" for educational, informational, and research purposes only.**
 
-This script modifies the frontend behavior of the platform and may allow users to bypass regional restrictions, age verification checks, or platform blocks mandated by local laws, government regulations, or court orders (including, but not limited to, legal restrictions in **Brazil** and **Ukraine**).
+This script modifies the frontend behavior of the platform and may allow users to bypass regional restrictions, age verification checks, or platform blocks mandated by local laws, government regulations, or court orders (including, but not limited to, legal restrictions in **United Kingdom** and **Brazil**).
 
 By choosing to install and use this script, you explicitly acknowledge and agree to the following:
 * **User Responsibility:** You are solely responsible for ensuring that your use of this software complies with all applicable local, state, national, and international laws in your jurisdiction.
